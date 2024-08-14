@@ -48,7 +48,7 @@ function navAnimation(){
     rotate:"45deg"
   })
   gsap.to("#pro",{
-    x:"-63%",
+    x:"67%",
     ease:"expo.out",
     duration:1.5,
     delay:0.2
