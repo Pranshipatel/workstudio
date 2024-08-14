@@ -19,7 +19,7 @@ nav{
     /* background: red; */
     z-index: 10;
     padding: 2vw 3vw;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
 }
@@ -73,7 +73,7 @@ nav #project #pro{
     justify-content: center;
     position: fixed ;
     z-index: 999;
-    display: none;
+    /* display: none; */
 }
 #loader #yellow1{
     background: #F5E41B;
@@ -440,10 +440,12 @@ nav #project #pro{
     border: none;
     font-size:1.1vw;
     color: gray;
+    cursor: pointer;
 }
 #page3 #top img{
     width: 3.8vw;
     height: 2.4vw;
+    cursor: pointer;
 }
 
 #page4{
@@ -510,7 +512,7 @@ nav #project #pro{
 
 @media (max-width:600px) {
     #loader{
-        height: 85vh;
+        height: 100vh;
     }
     nav{
         width: 100%;
@@ -521,20 +523,40 @@ nav #project #pro{
         
     }
  
+    nav svg{
+        width: 16vw;
+    }
     
     nav #project{
         display: none;
     }
+
+    #loader h1{
+        font-size: 9vw;
+        line-height: 7vw;
+    }
     #page1{
         width: 100%;
-        height: 85vh;
+        height: 100vh;
         background: #F5E41B;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    #page1 h1{
+        font-size: 9vw;
+        line-height: 7vw;
+    }
+    #page1-down{
+        display: none;
+    }
+    
     #page2{
-        height: 85vh;
+        height: 100vh;
+    }
+    #page2 .elem h1{
+        font-size: 12vw;
+        line-height: 12vw;
     }
     #page3{
         display: flex;
@@ -575,6 +597,26 @@ nav #project #pro{
         font-size:1.1vw;
         color: gray;
     }
-    
-
+    #page3 #top{
+        width: 100%;
+        height: 12vh;
+       bottom: 0%;
+    }
+    #page3 button{
+        font-size:2.8vw;
+        color: rgb(35, 34, 34);
+    }
+    #page3 #top img{
+        width: 5vw;
+        height: 4vw;
+    }
+    #page4{
+        min-height: 15vh;
+    }
+    #page4 h2{
+        font-size: 2.4vw;
+    }
+    #page4 #text h3{
+        display: none;
+    }
 }
